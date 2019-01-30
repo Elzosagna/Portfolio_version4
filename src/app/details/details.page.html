@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list inset>
+          <ul *ngFor="let data of httpdata" (click)="onSelect(data)">
+              <ion-card>
+                  <ion-card-content>
+                    <img src="{{data.Image}}">
+                    <ion-card-title>
+                      {{ data.Titre }}
+                      </ion-card-title>
+
+
+                <p>{{ data.Description }}</p
+                  <p>{{ data.Technoligie }}</p 
+
+                  </ion-card-content>
+                </ion-card>
+
+
+              </ul>
+        </ion-list>
+</ion-content>

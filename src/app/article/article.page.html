@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>article</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor= "let Article of article">
+
+      <img src="{{ Article.Image }}">
+
+      <ion-card-content>
+        <ion-card-title>
+          {{Article.Titre}}
+        </ion-card-title>
+        <p>{{ Article.Article}}</p>
+      </ion-card-content>
+
+    </ion-card>
+</ion-content>
