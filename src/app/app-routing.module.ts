@@ -19,9 +19,8 @@ const routes: Routes = [
   },
   { path: 'contact',
     loadChildren: './contact/contact.module#ContactPageModule'
-  },
-  { path: 'details', loadChildren: './details/details.module#DetailsPageModule' }
-];
+  }
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

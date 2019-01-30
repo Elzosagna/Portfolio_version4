@@ -7,6 +7,22 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
+
+<div  style="
+  margin-left:34px;
+  margin-top:20px;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;">
+  <img style="  width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: right center;"
+    width="150" src="../../assets/imgs/ki_suis_je.jpg"/>
+</div>
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">

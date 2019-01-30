@@ -4,21 +4,19 @@
 }
 
 .card-background-page {
+ion-card {
+  position: relative;
+  text-align: center;
+  }
 
-    ion-card {
-      position: relative;
-      text-align: center;
-    }
-
-    .card-title {
-      position: absolute;
-      top: 17%;
-      margin-left: -13%;
-      font-size: 2.0em;
-      width: 100%;
-      font-family: 'Dancing Script', cursive;
-      font-weight: bold !important;
-      color: black;
-    }
-
+.card-title {
+  position: absolute;
+  top: 17%;
+  margin-left: -13%;
+  font-size: 2.0em;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold !important;
+  color: black;
+  }
   }
