@@ -6,16 +6,18 @@ import { Routes, ActivatedRoute, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RealisationPage } from './realisation.page';
-import { DetailsPage } from '../details/details.page';
+import { DetailsComponent } from './details/details.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: RealisationPage
+  },
+  {
+    path: ':id',
+    component: DetailsComponent
   }
-  //Chemin de Recupération de l'id d'un projet
-
 ];
 
 @NgModule({
@@ -25,6 +27,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RealisationPage]
+  declarations: [RealisationPage, DetailsComponent]
 })
 export class RealisationPageModule {}
